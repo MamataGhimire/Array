@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   int number[6]={2,3,5,7,9,7};
+   int max=number[0];
+   for(int i=0;i<6;i++)
+   {
+       if(number[i]>max)
+       {
+           max=number[i];
+       }
+   }
+   cout<<max<<" is the largest number";
+   
+
+    return 0;
+}
