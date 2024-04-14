@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   int number[6]={9,3,5,8,0,7};
+   int max=number[0];
+   int smax=-1;
+   for(int i=0;i<6;i++)
+   {
+       if(number[i]>max)
+       {   smax=max;
+           max=number[i];
+       }
+       if(number[i]<max && number[i]>smax)
+       {
+           smax=number[i];
+       }
+    }
+   
+   cout<<max<<" is the largest number"<<endl;
+    cout<<smax<<" is the second largest number";
+   
